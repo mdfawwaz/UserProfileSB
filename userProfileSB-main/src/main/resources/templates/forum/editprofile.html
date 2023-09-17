@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Edit Form</title>
+</head>
+<body>
+	    <h1>Edit Form</h1>
+
+    <form method="post" action="#" th:action="@{/forum/editProfile}" th:object="${registrationForm}">
+
+
+        <label for="username"><b>Username</b></label><br>
+
+        <input type="text" name="username" id="username" th:field="*{username}"><br>
+
+	    <label for="dateOfBirth"><b>Date Of Birth</b></label><br>
+		<input type="text" name="dateOfBirth" id="dateOfBirth" th:field="*{dateOfBirth}"><br>
+		<label for="Bio"><b>Bio</b></label><br>
+		<input type="text" name="Bio" id="Bio" th:field="*{bio}"><br>
+		<input type="submit" value="Submit!">
+
+         
+
+    </form>
+</body>
+</html>
